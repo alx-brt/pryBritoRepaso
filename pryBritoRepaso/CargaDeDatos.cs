@@ -17,10 +17,12 @@ namespace pryBritoRepaso
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            string dato;
-            dato = txtCodigo.Text;
-            MessageBox.Show(dato);
-
+            int codi;
+            string name;
+            name = txtNombre.Text;
+            codi = int.Parse(txtCodigo.Text);
+            MessageBox.Show("El nombre es " + name + " // Y el código es " + codi.ToString());
+           
         }
     }
 }

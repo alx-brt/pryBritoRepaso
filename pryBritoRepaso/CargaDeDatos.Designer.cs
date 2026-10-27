@@ -31,6 +31,8 @@
             lblCodigo = new Label();
             txtCodigo = new TextBox();
             btnRegistrar = new Button();
+            lblNombre = new Label();
+            txtNombre = new TextBox();
             SuspendLayout();
             // 
             // lblCodigo
@@ -51,7 +53,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(148, 66);
+            btnRegistrar.Location = new Point(148, 100);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(75, 23);
             btnRegistrar.TabIndex = 2;
@@ -59,11 +61,29 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(30, 66);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(51, 15);
+            lblNombre.TabIndex = 3;
+            lblNombre.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(87, 63);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(100, 23);
+            txtNombre.TabIndex = 4;
+            // 
             // CargaDeDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(235, 101);
+            ClientSize = new Size(235, 135);
+            Controls.Add(txtNombre);
+            Controls.Add(lblNombre);
             Controls.Add(btnRegistrar);
             Controls.Add(txtCodigo);
             Controls.Add(lblCodigo);
@@ -81,5 +101,7 @@
         private Label lblCodigo;
         private TextBox txtCodigo;
         private Button btnRegistrar;
+        private Label lblNombre;
+        private TextBox txtNombre;
     }
 }
