@@ -19,7 +19,7 @@ namespace pryBritoRepaso
         {
             string dato;
             dato = txtCodigo.Text;
-            MessageBox.Show(txtCodigo.Text);
+            MessageBox.Show(dato);
 
         }
     }
