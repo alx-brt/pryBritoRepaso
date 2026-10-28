@@ -33,9 +33,9 @@
             lstResultado = new ListBox();
             btnCargarNuevos = new Button();
             cboAgregarDato = new ComboBox();
-            label1 = new Label();
+            lblGrupo2 = new Label();
             txtDato = new TextBox();
-            label2 = new Label();
+            lblDato = new Label();
             btnGrabar = new Button();
             lblMensaje = new Label();
             SuspendLayout();
@@ -86,14 +86,14 @@
             cboAgregarDato.Size = new Size(102, 23);
             cboAgregarDato.TabIndex = 5;
             // 
-            // label1
+            // lblGrupo2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 241);
-            label1.Name = "label1";
-            label1.Size = new Size(40, 15);
-            label1.TabIndex = 4;
-            label1.Text = "Grupo";
+            lblGrupo2.AutoSize = true;
+            lblGrupo2.Location = new Point(22, 241);
+            lblGrupo2.Name = "lblGrupo2";
+            lblGrupo2.Size = new Size(40, 15);
+            lblGrupo2.TabIndex = 4;
+            lblGrupo2.Text = "Grupo";
             // 
             // txtDato
             // 
@@ -102,14 +102,14 @@
             txtDato.Size = new Size(100, 23);
             txtDato.TabIndex = 6;
             // 
-            // label2
+            // lblDato
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(22, 270);
-            label2.Name = "label2";
-            label2.Size = new Size(32, 15);
-            label2.TabIndex = 7;
-            label2.Text = "Dato";
+            lblDato.AutoSize = true;
+            lblDato.Location = new Point(22, 270);
+            lblDato.Name = "lblDato";
+            lblDato.Size = new Size(32, 15);
+            lblDato.TabIndex = 7;
+            lblDato.Text = "Dato";
             // 
             // btnGrabar
             // 
@@ -137,10 +137,10 @@
             ClientSize = new Size(203, 345);
             Controls.Add(lblMensaje);
             Controls.Add(btnGrabar);
-            Controls.Add(label2);
+            Controls.Add(lblDato);
             Controls.Add(txtDato);
             Controls.Add(cboAgregarDato);
-            Controls.Add(label1);
+            Controls.Add(lblGrupo2);
             Controls.Add(btnCargarNuevos);
             Controls.Add(lstResultado);
             Controls.Add(cboGrupo);
@@ -162,9 +162,9 @@
         private ListBox lstResultado;
         private Button btnCargarNuevos;
         private ComboBox cboAgregarDato;
-        private Label label1;
+        private Label lblGrupo2;
         private TextBox txtDato;
-        private Label label2;
+        private Label lblDato;
         private Button btnGrabar;
         private Label lblMensaje;
     }

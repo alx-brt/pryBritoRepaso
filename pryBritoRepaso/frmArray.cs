@@ -119,8 +119,25 @@ namespace pryBritoRepaso
                     txtDato.Text = "";
                     break;
 
+
+                case "Grupo B":
+                    vectorGrupoB[indiceGrabar] = txtDato.Text;
+                    indiceGrabar++;
+                    lblMensaje.Text = "Almacenado..." + txtDato.Text;
+                    txtDato.Text = "";
+                    break;
+
+                case "Grupo C":
+                    vectorGrupoC[indiceGrabar] = txtDato.Text;
+                    indiceGrabar++;
+                    lblMensaje.Text = "Almacenado..." + txtDato.Text;
+                    txtDato.Text = "";
+                    break;
+
+
                 default:
                     break;
+
             }
         }
     }
