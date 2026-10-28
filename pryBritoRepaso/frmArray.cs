@@ -113,25 +113,46 @@ namespace pryBritoRepaso
             switch (cboAgregarDato.Text)
             {
                 case "Grupo A":
-                    vectorGrupoA[indiceGrabar] = txtDato.Text;
-                    indiceGrabar++;
-                    lblMensaje.Text = "Almacenado..." + txtDato.Text;
-                    txtDato.Text = "";
+                    if (indiceGrabar >= vectorGrupoA.Length)
+                    {
+                        MessageBox.Show("No quedan más lugares");                        
+                    }
+                    else
+                    {
+                        vectorGrupoA[indiceGrabar] = txtDato.Text;
+                        indiceGrabar++;
+                        lblMensaje.Text = "Almacenado..." + txtDato.Text;
+                        txtDato.Text = "";
+                    }
                     break;
 
 
                 case "Grupo B":
-                    vectorGrupoB[indiceGrabar] = txtDato.Text;
-                    indiceGrabar++;
-                    lblMensaje.Text = "Almacenado..." + txtDato.Text;
-                    txtDato.Text = "";
+                    if (indiceGrabar >= vectorGrupoB.Length)
+                    {
+                        MessageBox.Show("No quedan más lugares");
+                    }
+                    else
+                    {
+                        vectorGrupoB[indiceGrabar] = txtDato.Text;
+                        indiceGrabar++;
+                        lblMensaje.Text = "Almacenado..." + txtDato.Text;
+                        txtDato.Text = "";
+                    }
                     break;
 
                 case "Grupo C":
-                    vectorGrupoC[indiceGrabar] = txtDato.Text;
-                    indiceGrabar++;
-                    lblMensaje.Text = "Almacenado..." + txtDato.Text;
-                    txtDato.Text = "";
+                    if (indiceGrabar >= vectorGrupoC.Length)
+                    {
+                        MessageBox.Show("No quedan más lugares");
+                    }
+                    else
+                    {
+                        vectorGrupoC[indiceGrabar] = txtDato.Text;
+                        indiceGrabar++;
+                        lblMensaje.Text = "Almacenado..." + txtDato.Text;
+                        txtDato.Text = "";
+                    }
                     break;
 
 
